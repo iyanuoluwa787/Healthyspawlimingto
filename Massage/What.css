@@ -1,0 +1,97 @@
+
+body{
+    background:#000;
+}
+
+/* Header */
+.offer-header{
+    text-align:center;
+    padding:40px 20px;
+    color:white;
+}
+
+.offer-header h1{
+    font-size:42px;
+    margin-bottom:15px;
+    font-weight:300;
+}
+
+.offer-header p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:14px;
+}
+
+/* Service Sections */
+.service-box{
+    display:flex;
+    width:96%;
+    margin:15px auto;
+    background:#f2f2f2;
+}
+
+.service-image{
+    width:50%;
+}
+
+.service-image img{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.service-content{
+    width:50%;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.service-content h2{
+    font-size:28px;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+.service-content h3{
+    margin-top:30px;
+    margin-bottom:15px;
+    font-weight:400;
+}
+
+.service-content p{
+    line-height:1.8;
+    color:#444;
+}
+
+.price-list{
+    margin-top:20px;
+}
+
+.price-list p{
+    margin:8px 0;
+    font-style:italic;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .service-box{
+        flex-direction:column;
+    }
+
+    .service-image,
+    .service-content{
+        width:100%;
+    }
+
+    .service-content{
+        padding:30px;
+    }
+
+    .offer-header h1{
+        font-size:32px;
+    }
+}

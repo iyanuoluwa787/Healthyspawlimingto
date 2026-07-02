@@ -1,0 +1,492 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Quicksand', sans-serif;
+    background:#fff;
+}
+
+/* HEADER */
+header{
+    position:relative;
+}
+
+.header{
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.logo-section{
+    padding:50px 20px 30px;
+}
+
+.logo-section img{
+    width:20%;
+    margin-bottom:20px;
+}
+
+.logo-section h1{
+    font-size:58px;
+    font-weight:500;
+    color:#111;
+    margin-bottom:10px;
+}
+
+.phone{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.address{
+    font-size:22px;
+    color:#222;
+}
+
+/* NAVIGATION */
+nav{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.nav-wrapper{
+    max-width:1600px;
+    margin:auto;
+    padding:30px 60px 70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.left-phone{
+    font-size:22px;
+    color:#111;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:100px;
+    margin: 20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111;
+    font-size:22px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#9f8b5c;
+}
+
+/* HERO IMAGE */
+
+.hero{
+    width:100%;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:650px;
+    object-fit:cover;
+    display:block;
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+    .nav-wrapper{
+        flex-direction:column;
+        gap:30px;
+        padding:30px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .logo-section h1{
+        font-size:42px;
+    }
+
+    .phone{
+        font-size:20px;
+    }
+
+    .address{
+        font-size:18px;
+    }
+}
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero img{
+        height:400px;
+    }
+
+    .left-phone{
+        display:none;
+    }
+}
+
+.about-spa{
+    background:#000;
+    color:#fff;
+    padding:70px 20px;
+}
+
+.about-spa .container{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.about-spa p{
+    font-family:'Poppins', sans-serif;
+    font-size:24px;
+    font-weight:300;
+    line-height:2;
+    text-align:center;
+    letter-spacing:0.5px;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+    .about-spa p{
+        font-size:20px;
+        line-height:1.8;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .about-spa{
+        padding:50px 15px;
+    }
+
+    .about-spa p{
+        font-size:17px;
+        line-height:1.8;
+        text-align:left;
+    }
+}
+.about-spa{
+    background:#000;
+    color:#fff;
+    padding:70px 20px;
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
+
+/* Book Appointment  */
+.services{
+    width:100%;
+    min-height:100vh;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.services h1{
+    font-size:48px;
+    font-weight:300;
+    margin-bottom:60px;
+}
+
+.slider-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
+.slide-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+}
+
+.image-box img{
+    width:450px;
+    height:320px;
+    object-fit:cover;
+}
+
+.text-box{
+    max-width:420px;
+    text-align:center;
+}
+
+.text-box p{
+    line-height:1.8;
+    color:#333;
+    margin-bottom:35px;
+}
+
+.text-box h3{
+    font-family:cursive;
+    font-size:26px;
+    font-weight:400;
+}
+
+.arrow{
+    border:none;
+    background:transparent;
+    font-size:40px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.arrow:hover{
+    transform:scale(1.2);
+}
+
+.dots{
+    margin-top:25px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    background:#ccc;
+    border-radius:50%;
+    display:inline-block;
+    margin:0 5px;
+    cursor:pointer;
+}
+
+.dot.active{
+    background:#000;
+}
+
+.appointment-text{
+    margin-top:70px;
+    color:#444;
+    font-size:15px;
+}
+
+.book-btn{
+    margin-top:30px;
+    padding:15px 35px;
+    border:1px solid #333;
+    background:transparent;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#333;
+    color:white;
+}
+
+@media(max-width:900px){
+
+    .slide-content{
+        flex-direction:column;
+    }
+
+    .image-box img{
+        width:100%;
+        max-width:450px;
+    }
+
+    .slider-container{
+        gap:20px;
+    }
+
+    .services h1{
+        font-size:35px;
+    }
+}
+
+.hours-section{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px 20px;
+}
+
+.wrapper{
+    position:relative;
+    width:1200px;
+    height:760px;
+}
+
+/* IMAGE */
+
+.image-container{
+    position:absolute;
+    right:0;
+    top:0;
+
+    width:760px;
+    height:760px;
+}
+
+.image-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* CARD */
+
+.hours-card{
+    position:absolute;
+
+    left:0;
+    top:90px;
+
+    width:630px;
+    background:#fff;
+
+    padding:70px 75px;
+    z-index:10;
+}
+
+.hours-card h2{
+    font-size:55px;
+    font-weight:400;
+    margin-bottom:80px;
+    color:#111;
+}
+
+.hours-card h4{
+    font-family:cursive;
+    font-size:34px;
+    font-weight:400;
+    margin-bottom:55px;
+}
+
+.schedule{
+    width:100%;
+}
+
+.day{
+    display:flex;
+    gap:40px;
+    margin-bottom:24px;
+}
+
+.day span:first-child{
+    width:170px;
+    font-size:22px;
+    color:#222;
+}
+
+.day span:last-child{
+    font-size:22px;
+    color:#222;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .wrapper{
+        width:100%;
+        height:auto;
+    }
+
+    .image-container{
+        position:relative;
+        width:100%;
+        height:500px;
+    }
+
+    .hours-card{
+        position:relative;
+        width:95%;
+        margin:-120px auto 0;
+        left:auto;
+        top:auto;
+    }
+}
+
+@media(max-width:768px){
+
+    .hours-card{
+        padding:40px 25px;
+    }
+
+    .hours-card h2{
+        font-size:40px;
+        margin-bottom:40px;
+    }
+
+    .hours-card h4{
+        font-size:24px;
+    }
+
+    .day{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .day span{
+        font-size:18px !important;
+    }
+}
+
+/* FOOTER */
+footer{
+    background:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    font-size:32px;
+    margin-bottom:20px;
+    font-weight:300;
+}
+
+footer p{
+    margin:8px 0;
+    color:#555;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .container{
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .image-box{
+        position:relative;
+        width:100%;
+        height:350px;
+    }
+
+    .hours-card{
+        position:relative;
+        width:90%;
+        margin:-70px auto 0;
+        left:auto;
+        top:auto;
+    }
+}

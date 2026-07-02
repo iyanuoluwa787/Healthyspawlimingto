@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Form</title>
+<link rel="stylesheet" href="payment.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Payment Form</h2>
+
+<form id="paymentForm">
+
+<input type="text" id="fullname" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="number" id="amount" placeholder="Amount ($)" required>
+
+<button type="submit">Continue</button>
+
+</form>
+
+<div id="paymentSection" class="hidden">
+
+<h3>Transfer Payment</h3>
+
+<div class="payment-option">
+<i class="fa-solid fa-building-columns"></i>
+<strong>Chime</strong>
+<p>$jesse-Asher</p>
+</div>
+
+<div class="payment-option">
+<i class="fa-brands fa-vimeo-v"></i>
+<strong>Venmo</strong>
+<p>@ViolentJ1976</p>
+</div>
+
+<div class="payment-option">
+<i class="fa-solid fa-dollar-sign"></i>
+<strong>Cash App</strong>
+<p>$ViolentJ1976</p>
+</div>
+
+<button id="verifyBtn">
+I Have Paid
+</button>
+
+</div>
+
+<div id="verification" class="hidden">
+
+<h2>Verifying Payment...</h2>
+
+<p id="countdown">30</p>
+
+</div>
+
+<div id="success" class="hidden">
+
+<h2>✅ Payment Verified</h2>
+
+<p>Thank you! Your payment has been confirmed.</p>
+<button><a href="Home.html">Back to home page</a></button>
+
+</div>
+
+</div>
+
+<script src="payment.js"></script>
+
+</body>
+</html>
